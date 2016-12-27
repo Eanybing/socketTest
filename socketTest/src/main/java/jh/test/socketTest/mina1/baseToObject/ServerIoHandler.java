@@ -12,8 +12,8 @@ import org.apache.mina.common.IoSession;
  * @date 2016-9-2 下午3:47:03
  * 
  */
-public class JhMinaHander extends IoHandlerAdapter {
-	public JhMinaHander() {
+public class ServerIoHandler extends IoHandlerAdapter {
+	public ServerIoHandler() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -65,7 +65,7 @@ public class JhMinaHander extends IoHandlerAdapter {
 		System.out.println(msg);
 		
 		//写入数据到客户端
-		session.write("12345");
+		session.write(12345);
 		super.messageReceived(session, message);
 
 	}
