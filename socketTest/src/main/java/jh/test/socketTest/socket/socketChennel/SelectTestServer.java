@@ -31,7 +31,8 @@ public class SelectTestServer {
 			
 			//从selector中获取selection key s,从selectionKey中获取channel,selector
 			 for(SelectionKey sk : selector.selectedKeys()){
-				if(sk.isReadable()){
+				
+				 if(sk.isReadable()){//选择一个注册的信道,即读取信道
 					SocketChannel sc = (SocketChannel) sk.channel();
 					sk.selector();
 					//

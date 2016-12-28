@@ -8,6 +8,10 @@ import java.nio.charset.Charset;
 
 /**
  * 通过原始的socket channel来发送数据
+ * 这个的关键点就是byte to 基本类型,byte to 对象的相互转换,剩下的都是都比了
+ * 
+ * 原理上来讲,mina底层是用socket channel实现的,这个就可以知道mina绑定的一个端口对应一个socket握手,
+ * 这样的话,一个客户端与mina服务器建立联系的时候只会有一个iosession
  *
  * @author JiangHan
  */
