@@ -14,7 +14,7 @@ public class MybatisTest {
 
 	@Test
 	public void test() {
-		String resource = "mybatis/mybatis-config.xml";
+		String resource = "mybatis-config.xml";
 		InputStream inputStream;
 		try {
 			
@@ -23,7 +23,7 @@ public class MybatisTest {
 			Configuration configuration = sqlSessionFactory.getConfiguration();
 			SqlSession session = sqlSessionFactory.openSession();
 			
-			User user = session.selectOne("mybatis.User.selectUser", 2);
+			User user = session.selectOne("mybatis.User.selectUser", 1);
 			System.out.println(user.getName());
 		
 		} catch (IOException e) {
