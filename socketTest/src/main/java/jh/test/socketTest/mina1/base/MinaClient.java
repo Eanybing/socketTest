@@ -19,7 +19,7 @@ public class MinaClient {
 	
 	public static void main(String[] args) throws Exception {
 		System.out.println("-------------------- mina client start ------------------");
-		SocketChannel sc = SocketChannel.open(new InetSocketAddress("192.168.53.55", 18088));
+		SocketChannel sc = SocketChannel.open(new InetSocketAddress("localhost", 18088));
 		//sc.connect(new InetSocketAddress("127.0.0.1", 18088));
 		ByteBuffer bf = ByteBuffer.allocate(1024);
 //		bf.putInt(1025);

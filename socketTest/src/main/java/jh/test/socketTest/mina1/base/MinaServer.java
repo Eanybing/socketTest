@@ -28,7 +28,7 @@ public class MinaServer {
 		Log4jConfig.load(LOG4J_CONFIG);
 		acceptor.getFilterChain().addLast("logger", new LoggingFilter());
 		acceptor.getFilterChain().addLast("codec", new ProtocolCodecFilter(new TextLineCodecFactory(Charset.forName("UTF-8"))));
-		acceptor.bind(new InetSocketAddress("192.168.53.55", 18088), new JhMinaHander());
+		acceptor.bind(new InetSocketAddress("localhost", 18089), new JhMinaHander());
 		System.out.println("------------mina server end -------------------------");
 	}
 }

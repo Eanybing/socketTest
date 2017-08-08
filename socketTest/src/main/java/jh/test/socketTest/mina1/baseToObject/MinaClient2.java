@@ -30,7 +30,7 @@ public class MinaClient2 {
 		System.out.println("---------------send message----------------------");
 		System.out.println(cf.getSession().toString());
 		cf.getSession().write("Hi Server!");
-		//cf.getSession().write("quit");
+		cf.getSession().write("quit");
 		
 
 		// 等待连接断开
