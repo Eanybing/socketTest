@@ -6,7 +6,7 @@
         根据id查询得到一个user对象
      -->
     <select id="selectUser" parameterType="java.lang.Integer"
-            resultType="jh.test.socketTest.mybatis.User">
+            resultType="jh.test.mybatis.User">
         select * from user where id=#{id}
     </select>
 </mapper>
