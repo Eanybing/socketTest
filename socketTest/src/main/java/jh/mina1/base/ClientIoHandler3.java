@@ -1,10 +1,17 @@
-package jh.test.mina1.base;
+package jh.mina1.base;
 
 import org.apache.mina.common.IdleStatus;
 import org.apache.mina.common.IoHandlerAdapter;
 import org.apache.mina.common.IoSession;
 
-public class ClientIoHandler extends IoHandlerAdapter{
+public class ClientIoHandler3 extends IoHandlerAdapter{
+
+	private Object msg;
+	
+	public ClientIoHandler3(Object msg) {
+		super();
+		this.msg = msg;
+	}
 
 	/* (non-Javadoc)
 	 * @see org.apache.mina.common.IoHandlerAdapter#sessionCreated(org.apache.mina.common.IoSession)
@@ -57,10 +64,15 @@ public class ClientIoHandler extends IoHandlerAdapter{
 	@Override
 	public void messageReceived(IoSession session, Object message) throws Exception {
 		// TODO Auto-generated method stub
+		System.out.println("--------client write消息 ---------------------");
+		
+		session.write(msg);
+		session.write("1223443");
+		
+		
 		System.out.println("--------client 接收消息 ---------------------");
 		String msg = message.toString();
 		System.out.println(msg);
-		
 		super.messageReceived(session, message);
 	}
 
@@ -70,6 +82,7 @@ public class ClientIoHandler extends IoHandlerAdapter{
 	@Override
 	public void messageSent(IoSession session, Object message) throws Exception {
 		// TODO Auto-generated method stub
+		session.write(msg);
 		super.messageSent(session, message);
 	}
 	

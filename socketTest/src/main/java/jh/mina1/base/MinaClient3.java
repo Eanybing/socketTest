@@ -1,4 +1,4 @@
-package jh.test.mina1.base;
+package jh.mina1.base;
 
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;

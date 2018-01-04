@@ -1,4 +1,4 @@
-package jh.test.mina1.baseToObject;
+package jh.mina1.base;
 
 import org.apache.mina.common.IdleStatus;
 import org.apache.mina.common.IoHandlerAdapter;

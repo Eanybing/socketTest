@@ -1,4 +1,4 @@
-package jh.test.mybatis;
+package jh.mybatis;
 
 public class User {
 	private int id;

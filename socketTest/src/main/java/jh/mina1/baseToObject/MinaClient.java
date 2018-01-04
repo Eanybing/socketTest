@@ -1,4 +1,4 @@
-package jh.test.mina1.baseToObject;
+package jh.mina1.baseToObject;
 
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;

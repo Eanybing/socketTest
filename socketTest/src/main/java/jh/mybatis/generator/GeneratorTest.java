@@ -1,4 +1,4 @@
-package jh.test.mybatis.generator;
+package jh.mybatis.generator;
 
 /**
  * 测试 mybatis generator自动生成代码

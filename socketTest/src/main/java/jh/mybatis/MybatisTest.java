@@ -1,4 +1,4 @@
-package jh.test.mybatis;
+package jh.mybatis;
 
 import java.io.IOException;
 import java.io.InputStream;

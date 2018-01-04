@@ -1,4 +1,4 @@
-package jh.test.mina1.base;
+package jh.mina1.baseToObject;
 
 import java.io.InputStream;
 import java.util.Properties;
