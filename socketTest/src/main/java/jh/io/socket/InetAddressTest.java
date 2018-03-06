@@ -1,4 +1,4 @@
-package jh.test.socket;
+package jh.io.socket;
 
 import java.net.InetAddress;
 

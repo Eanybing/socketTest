@@ -1,4 +1,4 @@
-package jh.test.socket.socket;
+package jh.io.socket.socket;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

@@ -1,4 +1,4 @@
-package jh.test.socket.socketChennel;
+package jh.io.socket.socketChennel;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

@@ -1,4 +1,4 @@
-package jh.test.socket.UDP;
+package jh.io.socket.UDP;
 
 import java.io.IOException;
 import java.net.*;
