@@ -9,4 +9,8 @@
             resultType="jh.mybatis.User">
         select * from user where id=#{id}
     </select>
+
+    <update id="updateUser">
+        update user set `name`='jwc' WHERE id=1
+    </update>
 </mapper>

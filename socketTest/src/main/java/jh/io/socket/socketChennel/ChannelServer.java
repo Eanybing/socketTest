@@ -7,11 +7,14 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 
+/**
+ * 非阻塞
+ */
 public class ChannelServer {
 	public static void main(String[] args) throws IOException {
 		ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 		serverSocketChannel.socket().bind(new InetSocketAddress(12346));
-		while (true) {
+		while (true) {//忙等
 			SocketChannel socketChannel = serverSocketChannel.accept();
 			ByteBuffer buf = ByteBuffer.allocate(48);
 			socketChannel.read(buf);//read into buffer.

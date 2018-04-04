@@ -1,5 +1,8 @@
 package jh.io.socket.socketChennel;
 
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -8,9 +11,6 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
-
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 public class SelectTestServer {
 
@@ -34,7 +34,7 @@ public class SelectTestServer {
 				
 				 if(sk.isReadable()){//选择一个注册的信道,即读取信道
 					SocketChannel sc = (SocketChannel) sk.channel();
-					sk.selector();
+					//sk.selector();
 					//
 					ByteBuffer buf = ByteBuffer.allocate(48);
 					sc.read(buf);//read into buffer.

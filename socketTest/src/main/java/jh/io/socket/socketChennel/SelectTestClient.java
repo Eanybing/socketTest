@@ -1,12 +1,12 @@
 package jh.io.socket.socketChennel;
 
+import org.junit.BeforeClass;
+import org.junit.Test;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 public class SelectTestClient {
 
@@ -19,8 +19,8 @@ public class SelectTestClient {
 		SocketChannel sc = SocketChannel.open(new InetSocketAddress("localhost", 12346));
 
 		// 打开并注册选择器到信道
-		// Selector selector = Selector.open();
-		// sc.register(selector, SelectionKey.OP_WRITE);
+        //Selector selector = Selector.open();
+        //sc.register(selector, SelectionKey.OP_WRITE);
 
 		// write data
 		String newData = "New String to write to file...";

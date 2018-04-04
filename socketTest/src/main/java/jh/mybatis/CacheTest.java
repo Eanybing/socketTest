@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MybatisTest {
+public class CacheTest {
 
 	@Test
 	public void test() {
@@ -24,8 +24,13 @@ public class MybatisTest {
 			SqlSession session = sqlSessionFactory.openSession();
 			
 			User user = session.selectOne("mybatis.User.selectUser", 1);
+			User user2 = session.selectOne("mybatis.User.selectUser", 1);
+            session.update("mybatis.User.updateUser");
+			User user3 = session.selectOne("mybatis.User.selectUser", 1);
 			System.out.println(user.getName());
-		
+			System.out.println(user2.getName());
+			System.out.println(user3.getName());
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
