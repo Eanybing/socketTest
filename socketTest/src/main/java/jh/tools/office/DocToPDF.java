@@ -31,4 +31,30 @@ public class DocToPDF {
         InputStream inpuFile = new FileInputStream(new File("D:/文档/案例库/t.docx"));
         convertWithPOI(inpuFile,new File("D:/文档/案例库/KBS需求www.pdf"));
     }
+
+//    public void doc2pdf(String docFileName) throws Exception{
+//
+//        Parser p = new DocParser();// create a new parser instance
+//        FileInputStream fis = new FileInputStream("D:/tt.doc");// creating InputStream for use with parser
+//        DocumentElement mydoc = p.parse(fis,true,false);// parse document from input stream
+//        DocWriter w = new PDFWriter();// create PDF writer
+//        w.writeDocument(mydoc,new FileOutputStream("D:/tt.pdf"));// write document as pdf using writer
+//
+//        wordMLPackage = WordprocessingMLPackage.load(new java.io.File(inputfilepath));
+//
+//        // Set up font mapper
+//        Mapper fontMapper = new IdentityPlusMapper();
+//        wordMLPackage.setFontMapper(fontMapper);
+//
+//        // Example of mapping missing font Algerian to installed font Comic Sans MS
+//        PhysicalFont font
+//                = PhysicalFonts.getPhysicalFonts().get("Comic Sans MS");
+//        fontMapper.getFontMappings().put("Algerian", font);
+//
+//        org.docx4j.convert.out.pdf.PdfConversion c
+//                = new org.docx4j.convert.out.pdf.viaXSLFO.Conversion(wordMLPackage);
+//        //  = new org.docx4j.convert.out.pdf.viaIText.Conversion(wordMLPackage);
+//
+//        OutputStream os = new java.io.FileOutputStream(inputfilepath + ".pdf");
+//    }
 }

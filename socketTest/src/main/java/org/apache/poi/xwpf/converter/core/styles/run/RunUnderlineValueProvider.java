@@ -4,7 +4,7 @@ import org.apache.poi.xwpf.converter.core.styles.XWPFStylesDocument;
 import org.apache.poi.xwpf.usermodel.UnderlinePatterns;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTRPr;
 
-public class RunUnderlineValueProvider
+class RunUnderlineValueProvider
         extends AbstractRunValueProvider<UnderlinePatterns>
 {
 

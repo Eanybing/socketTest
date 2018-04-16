@@ -109,7 +109,16 @@
             <artifactId>fr.opensagres.xdocreport.itext.extension</artifactId>
             <version>1.0.5</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j</artifactId>
+            <version>3.3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-export-fo</artifactId>
+            <version>3.3.0</version>
+        </dependency>
 
     </dependencies>
 	<build>
